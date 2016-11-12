@@ -38,6 +38,11 @@ var ex = module.exports = function(options) {
     args.push(options.snapshotPath);
   }
 
+  if (options.vout !== undefined) {
+    args.push('--vout');
+    args.push(options.vout);
+  }
+
   var player = child_process.spawn(options.player, args);
 
   if (options.log !== undefined) {
