@@ -133,7 +133,9 @@ function stdCall(options, call, args, cb) {
     auth: ':' + options.httpPassword,
     agent: false
   }, function(res) {
-    cb(res);
+    if (cb !== undefined) {
+      cb(res);
+    }
   });
 }
 
