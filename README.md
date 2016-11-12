@@ -1,5 +1,5 @@
 # node-vlc-json [![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> Control VLC by using its JSON API
+> Control VLC from node by using its JSON API
 
 ## Installation
 
