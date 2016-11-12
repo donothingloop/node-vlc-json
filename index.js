@@ -33,6 +33,11 @@ var ex = module.exports = function(options) {
     args.push(options.httpPassword);
   }
 
+  if (options.snapshotPath !== undefined) {
+    args.push('--snapshot-path');
+    args.push(options.snapshotPath);
+  }
+
   var player = child_process.spawn(options.player, args);
 
   if (options.log !== undefined) {
@@ -65,6 +70,9 @@ var ex = module.exports = function(options) {
       this.status(function(res) {
         cb(res !== undefined && res !== null && res.state === 'playing');
       });
+    },
+    snapshot: function(cb) {
+      stdCall(options, 'snapshot', {}, cb);
     },
     pause: makeStdCall(options, 'pl_pause'),
     next: makeStdCall(options, 'pl_next'),

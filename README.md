@@ -32,6 +32,7 @@ player.next(cb);              // skip to the next media in the playlist
 player.previous(cb);          // skip to the previous media in the playlist
 player.isPlaying(cb);         // callback called with bool that indicates the playback state
 player.status(cb);            // callback called with the status of the VLC player
+player.snapshot(cb);          // take a snapshot and save it to snapshotPath
 ```
 
 [npm-image]: https://badge.fury.io/js/node-vlc-json.svg
