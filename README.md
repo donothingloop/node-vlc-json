@@ -1,5 +1,5 @@
 # node-vlc-json [![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> Control VLC from node by using its JSON API
+> Control VLC by using its JSON API
 
 ## Installation
 
@@ -31,5 +31,12 @@ player.close();               // terminate the player
 player.next(cb);              // skip to the next media in the playlist
 player.previous(cb);          // skip to the previous media in the playlist
 player.isPlaying(cb);         // callback called with bool that indicates the playback state
-player.status(cb);            // callback called with status of the VLC player
+player.status(cb);            // callback called with the status of the VLC player
 ```
+
+[npm-image]: https://badge.fury.io/js/node-vlc-json.svg
+[npm-url]: https://npmjs.org/package/node-vlc-json
+[travis-image]: https://travis-ci.org/donothingloop/node-vlc-json.svg?branch=master
+[travis-url]: https://travis-ci.org/donothingloop/node-vlc-json
+[daviddm-image]: https://david-dm.org/donothingloop/node-vlc-json.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/donothingloop/node-vlc-json

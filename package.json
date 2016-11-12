@@ -3,6 +3,11 @@
   "version": "0.0.1",
   "description": "A wrapper that exposes the basic API of vlc, using its JSON http interface",
   "main": "index.js",
+  "author": {
+    "name": "donothingloop",
+    "email": "donothingloop@gmail.com",
+    "url": "blog.wq.lc"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +16,15 @@
   "devDependencies": {
     "mocha": "^3.1.2"
   },
+  "repository": "donothingloop/node-vlc-json",
   "scripts": {
     "test": "mocha test"
-  }
+  },
+  "keywords": [
+    "vlc",
+    "remote",
+    "control",
+    "play",
+    "media"
+  ]
 }
