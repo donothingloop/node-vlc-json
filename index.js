@@ -43,6 +43,11 @@ var ex = module.exports = function(options) {
     args.push(options.vout);
   }
 
+  if (options.aout !== undefined) {
+    args.push('--aout');
+    args.push(options.aout);
+  }
+
   var player = child_process.spawn(options.player, args);
 
   if (options.log !== undefined) {

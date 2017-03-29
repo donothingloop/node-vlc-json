@@ -35,6 +35,15 @@ player.status(cb);            // callback called with the status of the VLC play
 player.snapshot(cb);          // take a snapshot and save it to snapshotPath
 ```
 
+## Options
+The constructor of *VLC* accepts this options:
+- interface
+- httpPort
+- httpPassword
+- snapshotPath
+- vout
+- aout
+
 [npm-image]: https://badge.fury.io/js/node-vlc-json.svg
 [npm-url]: https://npmjs.org/package/node-vlc-json
 [travis-image]: https://travis-ci.org/donothingloop/node-vlc-json.svg?branch=master
