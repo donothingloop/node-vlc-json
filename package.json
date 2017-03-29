@@ -1,6 +1,6 @@
 {
   "name": "node-vlc-json",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A wrapper that exposes the basic API of vlc, using its JSON http interface",
   "main": "index.js",
   "author": {

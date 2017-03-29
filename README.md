@@ -43,6 +43,7 @@ The constructor of *VLC* accepts this options:
 - snapshotPath
 - vout
 - aout
+- disableDbusControl
 
 [npm-image]: https://badge.fury.io/js/node-vlc-json.svg
 [npm-url]: https://npmjs.org/package/node-vlc-json

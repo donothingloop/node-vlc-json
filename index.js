@@ -48,6 +48,10 @@ var ex = module.exports = function(options) {
     args.push(options.aout);
   }
 
+  if (options.disableDbusControl === true) {
+    args.push('--disable-dbus-control');
+  }
+
   var player = child_process.spawn(options.player, args);
 
   if (options.log !== undefined) {
